@@ -1,0 +1,155 @@
+/* PC,スマホ共通スタイル */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans Japanese";
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+}
+
+/* PC用スタイル */
+/* ヘッダー */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+div {
+  margin-inline: auto;
+}
+/* プロフィールタイトル */
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  padding: 3px 19px;
+  border: 1px solid #000000;
+}
+/* ナビゲーション */
+#nav-pc {
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: bold;
+  color: #000000;
+  margin: 33px 16px 33px 0;
+}
+#nav-pc > a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+#nav-pc > a:link {
+  color: #000000;
+}
+#nav-pc > a:visited {
+  color: #000000;
+}
+#nav-pc > a:hover {
+  color: #000000;
+}
+#nav-pc > a:active {
+  color: #000000;
+}
+/* メインビジュアル */
+.inner {
+  margin-inline: auto;
+}
+#mainphoto > img {
+  margin: 0 auto;
+  width: 100%;
+}
+/* aboutセクション */
+
+#about {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 75px;
+}
+#about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 123px;
+  margin-inline: 310px;
+  max-width: 960px;
+}
+#about-flex > div {
+  margin-inline: auto;
+}
+#about-flex > div > img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#works {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 87px;
+}
+#workspart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 350px;
+}
+.works123 {
+  width: 240px;
+  text-align: left;
+  margin-top: 45px;
+}
+.works123 > img {
+  width: 100%;
+  height: auto;
+}
+.works123 > p {
+  margin-top: 10px;
+}
+footer p {
+  text-align: center;
+  margin: 80px 0 20px 0;
+}
+
+/* スマホレスポンシブ設定 */
+@media screen and (max-width: 765px) {
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  #nav-pc a {
+    font-size: 21px;
+    gap: 20px;
+  }
+
+  #about-flex {
+    text-align: center;
+  }
+
+  .workspart {
+    align-items: center;
+  }
+}
