@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+body {
+  background-color: #ffffff;
+  font-family: "Noto Serif JP","Lato";
+  }
+p {
+  margin: 0;
+  }
+img {
+  width: 100%;
+  display: block;
+  }
+
+:root {
+  --font-color: #333333;
+  --font-color-white: #ffffff;
+  --button-background-color: #BAA8A2;
+}
+
+/* ヘッダー */
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 32px;
+  margin: 0 auto;
+}
+
+
+/* ファーストビュー */
+.fv-body {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.fv-title p {
+  font-size: 40px;
+  color: var(--font-color);
+  text-align: left;
+  letter-spacing: 0.7rem;
+  margin: 20px 0;
+}
+.view-item {
+  position: absolute;
+  top: 60%;
+  z-index: 2;
+
+  width: 360px;
+  color: var(--font-color-white);
+  font-family: "Lato";
+  background-color: var(--button-background-color);
+  margin: 96px 0;
+  padding: 20px 126px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  max-width: 1080px;
+}
+.fv-img img {
+  width: 900px;
+  height: 690px;
+  align-items: right;
+}
+.fv-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-cart svg {
+    width: 26px;
+    height: 26px;
+  }
+h1 {
+    font-size: 32px;
+    font-family: "lato";
+    font-weight: bold;
+    color: var(--font-color);
+    letter-spacing: 0.42rem;
+    text-align: center;
+  }
+.feature-section {
+  margin-top: 160px;
+}
+.section-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--font-color);
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+.feature-section-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
